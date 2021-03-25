@@ -1,6 +1,6 @@
 dl {
   display: flex;
-  background-color:white;
+  background-color: white;
   flex-direction: column;
   width: 100%;
   max-width: 80%;
@@ -23,9 +23,9 @@ dt {
 #datainput {
   width: 75%;
   height: 500px;
-  wrap:hard;
+  wrap: hard;
+  resize: none;
 }
-
 
 .text {
   font-weight: 600;
@@ -40,20 +40,14 @@ dt {
 }
 
 .percentage {
-  font-size: .8em;
+  font-size: 0.8em;
   line-height: 1;
   text-transform: uppercase;
   width: 100%;
   height: 70px;
   margin-left: 130px;
-  background: repeating-linear-gradient(
-  to right,
-  #ddd,
-  #ddd 1px,
-  #fff 1px,
-  #fff 5%
-);
-  
+  background: repeating-linear-gradient(to right, #ddd, #ddd 1px, #fff 1px, #fff 5%);
+
   &:after {
     content: "";
     display: block;
@@ -63,13 +57,13 @@ dt {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    transition: background-color .3s ease;
+    transition: background-color 0.3s ease;
     cursor: pointer;
   }
   &:hover,
   &:focus {
     &:after {
-       background-color: rgb(14, 5, 145); 
+      background-color: rgb(14, 5, 145);
     }
   }
 }
@@ -83,9 +77,9 @@ dt {
   }
 }
 
-
-html, body {
+html,
+body {
   height: 500px;
-  font-family: "fira-sans-2",sans-serif;
+  font-family: "fira-sans-2", sans-serif;
   color: #333;
 }

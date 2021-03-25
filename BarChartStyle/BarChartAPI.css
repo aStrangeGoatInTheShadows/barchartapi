@@ -24,6 +24,7 @@ dt {
   width: 75%;
   height: 500px;
   wrap: hard;
+  resize: none;
 }
 
 .text {
@@ -39,7 +40,7 @@ dt {
 }
 
 .percentage {
-  font-size: .8em;
+  font-size: 0.8em;
   line-height: 1;
   text-transform: uppercase;
   width: 100%;
@@ -57,7 +58,7 @@ dt {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  transition: background-color .3s ease;
+  transition: background-color 0.3s ease;
   cursor: pointer;
 }
 
@@ -465,8 +466,9 @@ dt {
   width: 100%;
 }
 
-html, body {
+html,
+body {
   height: 500px;
-  font-family: "fira-sans-2",sans-serif;
+  font-family: "fira-sans-2", sans-serif;
   color: #333;
 }
