@@ -20,6 +20,12 @@ dt {
   margin-left: 130px;
 }
 
+#datainput {
+  width: 75%;
+  height: 500px;
+  wrap: hard;
+}
+
 .text {
   font-weight: 600;
   display: flex;
