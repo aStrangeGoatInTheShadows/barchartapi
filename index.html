@@ -17,10 +17,20 @@
   <script src="jquery-ui/external/jquery/jquery.js"></script>
   <script src="jquery-ui/jquery-ui.js"></script>
   <script src="barchart.js"></script>
-  <script>  
+  <script>
 
-    $(document).ready(function () {
+    $(document).ready(function () { 
+    
+      //$(".newbar").addClass("percentage percentage-75");
+      //$(".newbar").append("this is a new bar");
     });
+
+  </script>
+
+  <script>
+   //     alert("this ran");
+  //  const newHTML = "class="percentage percentage-16"><span class="text">Firefox: 16.09%</span>"
+    
 
   </script>
 
@@ -28,10 +38,19 @@
     <dt>
       Browser market share June 2015
     </dt>
-    <dd class="percentage percentage-11"><span class="text">IE 11: 11.55%</span></dd>
-    <dd class="percentage percentage-49"><span class="text">Chrome: 49.77%</span></dd>
-    <dd class="percentage percentage-16"><span class="text">Firefox: 16.09%</span></dd>
+    <dd id='graphOne' class="percentage percentage-1"><span class="text">IE 11: 11.55%</span></dd>
+    <dd id='graphTwo' class="percentage percentage-1"><span class="text">Chrome: 49.77%</span></dd>
+    <dd id='graphThree' class="percentage percentage-1"><span class="text">Firefox: 16.09%</span></dd>
+    <dd id='graphFour' class="percentage percentage-1"><span class="text">Chrome: 49.77%</span></dd>
+    <dd id='graphFive' class="percentage percentage-1"><span class="text">Firefox: 16.09%</span></dd>
+    <dd id='graphSix' class="percentage percentage-1"><span class="text">Chrome: 49.77%</span></dd>
+    <dd id='graphSeven' class="percentage percentage-1"><span class="text">Firefox: 16.09%</span></dd>
+    <dd id='graphEight' class="percentage percentage-1"><span class="text">Chrome: 49.77%</span></dd>
+    <dd id='graphNine' class="percentage percentage-1"><span class="text">Firefox: 16.09%</span></dd>
+    <dd id='graphTen' class="percentage percentage-1"><span class="text">Chrome: 49.77%</span></dd>
   </dl>
+
+
 
   <button id="graphbutton" onclick="buttonPush()">Graph Data</button>
 
