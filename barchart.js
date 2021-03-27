@@ -18,7 +18,7 @@ const drawBarChart = function (data, options, element) {
         //alert(id);
         $(id).removeClass("percentage percentage-1");
         $(id).addClass(newClass);
-        $(id + " > span.text").append(data[i]);
+        $(id + " > span.text").append(data[i - 1]);
     }
 }
 
