@@ -20,26 +20,21 @@ dt {
   margin-left: 130px;
 }
 
-#datainput {
-  width: 75%;
-  height: 500px;
-  wrap: hard;
-  resize: none;
-}
-
 .text {
+  z-index: 2;
   font-weight: 600;
   display: flex;
   align-items: center;
-  height: 40px;
-  width: 130px;
-  background-color: white;
+  height: 70px;
+  width: 0px;
+  //background-color: white;
   position: absolute;
   left: 0;
   justify-content: flex-end;
 }
 
 .percentage {
+  z-index: 1;
   font-size: 0.8em;
   line-height: 1;
   text-transform: uppercase;
@@ -50,6 +45,7 @@ dt {
 
   &:after {
     content: "";
+    z-index: 1;
     display: block;
     background-color: #3d9970;
     margin-bottom: 10px;
@@ -63,7 +59,7 @@ dt {
   &:hover,
   &:focus {
     &:after {
-      background-color: rgb(14, 5, 145);
+      background-color: rgb(21, 207, 36);
     }
   }
 }
@@ -75,6 +71,22 @@ dt {
       width: $value;
     }
   }
+}
+
+.verticalBarGraph {
+  content: "";
+  z-index: 1;
+  display: block;
+  background-color: #3d9970;
+  margin-bottom: 10px;
+  float: left;
+  height: 200px;
+  width: 50px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background-color 0.3s ease;
+  cursor: pointer;
 }
 
 html,
